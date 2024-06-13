@@ -5,8 +5,7 @@ jobs:
       - image: cimg/python:3.8
     steps:
       - checkout
-      - setup_remote_docker:
-          version: latest
+      - setup_remote_docker
       - run:
           name: Build Docker Image
           command: |
